@@ -4,9 +4,8 @@ public class Main {
     public static void main(String[] args) {
 
         int[] m = {-1,0,1};
-        int a = 1;
-        try {
-            Scanner sc = new Scanner(System.in);
+        int a;
+        try (Scanner sc = new Scanner(System.in)) {
             System.out.print("Введите число >>>");
             a = sc.nextInt();
             m[a-1] = 4/a;
