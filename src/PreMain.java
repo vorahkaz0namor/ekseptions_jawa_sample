@@ -1,5 +1,5 @@
 public class PreMain {
-    public static void premain() {
+    public static void main(String[] args) {
         int a1 = 4;
             try {
             System.out.println(a1/0);
