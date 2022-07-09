@@ -7,6 +7,7 @@ public class Main {
         int a = 1;
         try {
             Scanner sc = new Scanner(System.in);
+            System.out.print("Введите число >>>");
             a = sc.nextInt();
             m[a-1] = 4/a;
             System.out.println(m[a]);
