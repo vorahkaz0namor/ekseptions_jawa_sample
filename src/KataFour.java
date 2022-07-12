@@ -6,5 +6,9 @@ public class KataFour {
         int smallest = 0;
         smallest = (Arrays.stream(numz).min().getAsInt());
         System.out.println(smallest);
+        smallest = Integer.MAX_VALUE;
+        for (int i : numz)
+            smallest = Math.min(smallest, i);
+        System.out.println(smallest);
     }
 }
