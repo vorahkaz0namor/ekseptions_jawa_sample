@@ -6,5 +6,6 @@ public class PreMain {
         } catch (ArithmeticException e) {
             System.out.println("На ноль делить нельзя!");
         }
+        System.out.println("Значение а1 увеличилось до " + (a1+5));
     }
 }
