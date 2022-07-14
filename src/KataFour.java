@@ -10,5 +10,14 @@ public class KataFour {
         for (int i : numz)
             smallest = Math.min(smallest, i);
         System.out.println(smallest);
+        checkPrePost();
+    }
+
+    public static void checkPrePost() {
+        int x1 = 10, x2 = 10;
+        int y1 = ++x1;
+        int y2 = x2++;
+        int[] xy = {x1, y1, x2, y2};
+        for (int n : xy) System.out.println(n);
     }
 }
