@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.Spliterator;
 
 public class KataFour {
     public static void main(String[] args) {
@@ -41,5 +42,10 @@ public class KataFour {
         while (lite.hasPrevious())
             lite.previous();
         lite.forEachRemaining(System.out::print);
+        Spliterator<String> slite = spisok.spliterator();
+        List<String> pissok = new ArrayList<>();
+        while (slite.tryAdvance((n) -> pissok.add(n + "_#2")));
+        lite = pissok.listIterator();
+        lite.forEachRemaining(System.out::println);
     }
 }
