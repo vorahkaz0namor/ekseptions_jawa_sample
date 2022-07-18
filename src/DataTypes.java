@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class DataTypes {
         public static void main(String[] args) {
+            // Insert of some data types
             Scanner scan = new Scanner(System.in);
             int i = scan.nextInt();
             double d = scan.nextDouble();
